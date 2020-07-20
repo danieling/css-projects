@@ -12,4 +12,9 @@ setInterval(() => {
   hr.style.transform = `rotateZ(${(hh) + (mm/12)}deg)`;
   mn.style.transform = `rotateZ(${(mm)}deg)`;
   sc.style.transform = `rotateZ(${(ss)}deg)`;
-})
+});
+
+function toggleClass() {
+  const body = document.querySelector('body');
+  body.classList.toggle('light');
+}
